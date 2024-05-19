@@ -1,0 +1,124 @@
+/* Estilos básicos para el cuerpo del documento */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #002366; /* Fondo azul oscuro */
+    color: white; /* Letras blancas */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Estilos para el contenedor principal del formulario */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: auto;
+    background: #4169E1; /* Fondo azul claro */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el contenedor del encabezado */
+.containerHead {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* Estilo para el h1 */
+h1 {
+    color: #32CD32; /* Verde claro */
+}
+
+/* Estilos para los grupos de campos del formulario */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Estilos para las etiquetas de los campos */
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+}
+
+/* Estilos para los campos de entrada, selección y área de texto */
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+/* Estilos específicos para el checkbox */
+.form-group input[type="checkbox"] {
+    width: auto;
+}
+
+/* Estilos para el botón de enviar */
+.form-group button {
+    background: #5cb85c;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+/* Estilos para el botón de enviar al pasar el mouse */
+.form-group button:hover {
+    background: #4cae4c;
+}
+
+/* Estilos para el botón de enviar al permanecer activo */
+.form-group button.submitted {
+    background: yellow;
+    color: #000;
+}
+
+/* Estilos para la imagen descriptiva */
+.image-column {
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-column img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Estilos responsivos para pantallas de tamaño mediano (tabletas) */
+@media (max-width: 1200px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Estilos responsivos para pantallas pequeñas (tabletas en orientación vertical) */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .form-group button {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+/* Estilos responsivos para pantallas muy pequeñas (teléfonos móviles) */
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+/* Estilos para el pie de página */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+}
